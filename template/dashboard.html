@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATs Coffee shop @ Kathmandu</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/dash.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header section -->
+
+    <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"> Take a sip of a coffee</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#review">review</a>
+            <a href="#book">book</a>
+        </nav>
+
+
+    </header>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3> Halo frands coffee pilo! 😜</h3>
+
+            </div>
+
+            <div class="image">
+                <img src="{%static 'image/coffee.png' %}" class="main-home-image" alt="">
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!-- About US  -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> about us <span>why choose us</span> </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="{% static 'image/coffee.png' %}" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">what's make our coffee special!</h3>
+                <p>Whether you're searching for something new to warm your mug, seeking the best brew method for your
+                    favorite blend or exploring our rarest offerings, you’ve come to the right place.</p>
+                <div class="icons-container">
+                    <div class="icons">
+                        <img src="{% static 'image/coffee2.png' %}" alt="">
+                        <h3> Lets Have a coffee together!</h3>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Coffee Menu -->
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our menu <span>popular menu</span> </h1>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+                <img src="{% static 'image/expresso.png'  %}" alt="">
+                <div class="content">
+                    <h3>Expresso</h3>
+                    <p>Taste Our Expresso you'll Love it!</p>
+                    <span>NRS 250</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="{% static 'image/Americano.jpg' %}" alt="">
+                <div class="content">
+                    <h3> Americano</h3>
+                    <p>Taste Our Americano you'll Love it!</p>
+                    <span>NRS 300</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="{% static 'image/latte.jpg' %}" alt="">
+                <div class="content">
+                    <h3>Latte</h3>
+                    <p>Taste Our Latte you'll Love it!</p>
+                    <span>NRS 350</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+                <img src="{% static 'image/cappuccino.png'  %}" alt="">
+                <div class="content">
+                    <h3>Cappuccino</h3>
+                    <p>Taste Our Cappuccino you'll Love it!</p>
+                    <span>NRS 400</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Customer Review -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> reviews <span>what people says</span> </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="{% static 'image/Aayushmama.png' %}" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p> The place is too good. I loved my Cappuccino😋</p>
+                    <h3>Aayush Nepal</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="{% static 'image/shreyan.png' %}" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p> My double shot Americano was so perfect. Loved it!</p>
+                    <h3>Shreyan Bhandari</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="{% static 'image/shashwot.png'  %}" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p> Nice Place to hang out with friends. I loved my Latte!</p>
+                    <h3>Shashwot Jha</h3>
+                    <span>satisfied client</span>
+                </div>
+
+                <div class="swiper-slide box">
+                    <i class="fas fa-quote-left"></i>
+                    <i class="fas fa-quote-right"></i>
+                    <img src="{% static 'image/kamal.png' %}" alt="">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p> Customers service is very good. They Serve very quickly. Perfect Spot to take someone for coffee
+                        date</p>
+                    <h3>Kamal kumar Rai</h3>
+                    <span>satisfied client</span>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!---- Book Your Table -->
+
+    <section class="book" id="book">
+       
+
+        <h1 class="heading"> COFFEE TIME <span>reserve a table</span> </h1>
+        {% if messages %}
+        {% for message in messages %}
+        <div style="text-align: center; font-size: 20px;" id="message">{{message}} </div>
+        {% endfor%}
+        {% endif %}
+
+        <form action="/dashboard/reservemessage" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+        
+            <input type="text" name="name" placeholder="your name" class="box">
+            <input type="email" name="email" placeholder="your email" class="box">
+            <input type="text" name="number" placeholder="your number" class="box">
+
+            <textarea name="message" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit"  value="send message" class="btn">
+
+        </form>
+
+    </section>
+
+    <!-- footer Section   -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Pulchowk, Kathmandu </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Kings Way, Kathmandu </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> New Baneshwor, Kathmandu </a>
+            </div>
+
+            <div class="box">
+                <h3>Careers @ ATcoffees</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Sales/Marketing Team </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Waiters/Waitress </a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> Social Media Handler </a>
+            </div>
+
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>9861308626 </a>
+                <a href="#"> <i class="fas fa-phone"></i>01-4581497 </a>
+                <a href="#"> <i class="fas fa-envelope"></i>ATcoffees@outlook.com </a>
+            </div>
+
+            <div class="box">
+                <h3>Follow us on:- </h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook AT Coffee Shop </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter _atcoffeeshop2_ </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram _atcoffeeshop2_ </a>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script> setTimeout(function () {
+
+        $('#message').fadeOut('fast');
+        
+        }, 3000); </script>
+
+</body>
+
+</html>
